@@ -1,8 +1,9 @@
 "use client";
-import StartingPage from "./startingpage/page";
+import AJobsPanel from "./adminPortal/jobs/page";
+
 
 export default function Home() {
   return (
-    <StartingPage/>
+    <AJobsPanel/>
   );
 }
