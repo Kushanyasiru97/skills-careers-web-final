@@ -131,18 +131,16 @@ function AdminJobseekersPanel() {
 
             
               <div className="overflow-x-auto rounded-lg">
-                <table className="w-full table-auto">
-                  <thead>
-                    <tr className="text-[#8A93BE] text-base font-semibold text-left">
-                      <th className="px-4 py-3  w-[5%]"></th>
-                      <th className="px-2 py-3"></th>
-                      <th className="px-4 py-3  w-[25%]">Candidate Name</th>
-                      <th className="px-4 py-3  w-[10%]">Email</th>
-                      <th className="px-16 py-3  w-[20%] ml-auto justify-end">Phone</th>
-                      <th className="px-24 py-3  w-[25%]">Actions</th>
-                    </tr>
-                  </thead>
-                </table>
+              <div className="w-full">
+  <div className="text-[#8A93BE] text-base font-semibold text-left flex">
+    <div className="w-[5%] py-3 pl-3 flex items-center"></div>
+    <div className="py-3 flex items-center w-[10%]"></div>
+    <div className="py-3 w-[20%] flex items-center justify-start pl-0">Candidate Name</div>
+    <div className="px-4 py-3 w-[10%]">Email</div>
+    <div className="px-16 py-3 w-[20%] ml-auto justify-start">Phone</div>
+    <div className=" py-3 w-[25%] ml-auto justify-start">Actions</div>
+  </div>
+</div>
               </div>
 
               {filteredJobseekers.length > 0 ? (

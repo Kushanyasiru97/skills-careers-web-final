@@ -5,6 +5,6 @@ import AdminJobseekersPanel from "./adminPortal/jobseekers/page";
 
 export default function Home() {
   return (
-    <AdminJobseekersPanel/>
+    <AJobsPanel/>
   );
 }

@@ -38,49 +38,45 @@ function JobseekerCard(props) {
   return (
       
 
-      <div className="overflow-x-auto bg-white rounded-lg">
-        <table className="w-full table-fixed">
-          
-          <tbody>
-            <tr className="text-gray-700 hover:bg-gray-50 border-b text-sm">
-              <td className=" w-[5%] py-3 pl-3">
-                <input type="checkbox" />
-              </td>
-              <td className=" py-3 flex items-left">
-                <div className="w-10 h-10 text-white flex justify-center items-center rounded-full m-1">
-                  <Image src={profileImage} width={40} height={40} alt="logo" className="rounded-full" />
-                </div>
-              </td>
-              <td className="py-3 text-black font-semibold  w-[20%] justify-start pl-0">
-                {firstName} {lastName}
-              </td>
-              <td className="py-3 text-black font-semibold  w-[20%] justify-start">
-                {email}
-              </td>
-              <td className=" py-3 text-black font-semibold  w-[20%] justify-start">
-                {contactNumber}
-              </td>
-              <td className=" py-3 flex gap-2 ml-auto justify-end w-[30%] px-3">
-  <Link href="./candidates/editProfile">
-    <button className="flex items-center bg-[#001571] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-800 whitespace-nowrap">
-      <span className="mr-2">
-        <FaPenToSquare size={15} />
-      </span>
-      Edit Account
-    </button>
-  </Link>
-  <button className="flex items-center bg-[#EC221F] text-white px-4 py-2 rounded-lg shadow hover:bg-red-600 whitespace-nowrap">
-    <span className="mr-2">
-      <IoMdEyeOff size={20} />
-    </span>
-    Restrict
-  </button>
-</td>
-
-            </tr>
-          </tbody>
-        </table>
+    <div className="overflow-x-auto bg-white rounded-lg">
+    <div className="w-full">
+      <div className="text-gray-700 hover:bg-gray-50 border-b text-sm flex">
+        <div className="w-[5%] py-3 pl-3 flex items-center">
+          <input type="checkbox" />
+        </div>
+        <div className="py-3 flex items-center w-[10%]">
+          <div className="w-10 h-10 text-white flex justify-center items-center rounded-full m-1">
+            <Image src={profileImage} width={40} height={40} alt="logo" className="rounded-full" />
+          </div>
+        </div>
+        <div className="py-3 text-black font-semibold w-[20%] flex items-center justify-start pl-0">
+          {firstName} {lastName}
+        </div>
+        <div className="py-3 text-black font-semibold w-[20%] flex items-center text-justify justify-left">
+          {email}
+        </div>
+        <div className="py-3 text-black font-semibold w-[20%] flex items-center justify-center">
+          {contactNumber}
+        </div>
+        <div className="py-3 flex gap-2 ml-auto justify-end w-[30%] px-3 items-center">
+          <Link href="./candidates/editProfile">
+            <button className="flex items-center bg-[#001571] text-white py-2 px-4 rounded-lg shadow hover:bg-blue-800 whitespace-nowrap">
+              <span className="mr-2">
+                <FaPenToSquare size={15} />
+              </span>
+              Edit Account
+            </button>
+          </Link>
+          <button className="flex items-center bg-[#EC221F] text-white px-4 py-2 rounded-lg shadow hover:bg-red-600 whitespace-nowrap">
+            <span className="mr-2">
+              <IoMdEyeOff size={20} />
+            </span>
+            Restrict
+          </button>
+        </div>
       </div>
+    </div>
+  </div>
   );
 }
 
