@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 
 import JobCard from "./JobCard";
-import JobProfile from "./JobProfile";
+import JoobProfile from "./JobProfile";
 import AddJob from "./AddJob";
 import AdminNavBar from "@/app/admindashboard/AdminNav";
 
@@ -95,7 +95,7 @@ function AJobsPanel() {
           </div>
 
           {/* Center Contents */}
-          <div className="lg:col-span-4 md:col-span-4 sm:col-span-1 bg-slate-100 mb-4 p-6 rounded-lg shadow-md">
+          <div className="lg:col-span-4 md:col-span-4 sm:col-span-1 bg-white mb-4 p-6 rounded-lg shadow-md">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl text-purple-600 font-semibold">Jobs</h2>
               <button

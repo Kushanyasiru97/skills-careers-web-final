@@ -138,10 +138,10 @@ function JobCard(props) {
   const postedDate = `${date} ${month} ${year}`;
 
   return (
-    <div className=" gap-1 bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+    <div className=" gap-1 bg-white p-4 rounded-lg hover:shadow-md">
       <div className=" space-y-1"></div>
 
-      <table className="w-full">
+      <table className="w-full table-fixed">
         <tbody>
           <tr className="text-gray-700 hover:bg-gray-50 border-b text-sm">
             {/* First Column - Small */}
